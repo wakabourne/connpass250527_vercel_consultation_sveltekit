@@ -32,7 +32,7 @@
 </script>
 
 <main>
-  <h1>ランダムユーザー情報</h1>
+  <h1>ユーザー情報取得チェック</h1>
 
   <button on:click={loadNewUser} style="margin-bottom: 15pt;">新しいユーザーを表示</button>
 
@@ -40,7 +40,7 @@
     <p>読み込み中...</p>
   {:else if error}
     <p>エラー: {error}</p>
-    <button on:click={loadNewUser}>再試行</button>
+    <button on:click={loadNewUser}>ユーザーを変更</button>
   {:else if user}
     <div>
       <img src={user.picture.large} alt="ユーザープロフィール画像" />
